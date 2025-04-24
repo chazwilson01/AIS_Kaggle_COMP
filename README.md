@@ -21,17 +21,5 @@ Evaluation is based on **Spearman's rank correlation coefficient** between predi
 I used the **CatBoost** machine learning model for this competition, due to its robustness to categorical features, strong handling of missing data, and great out-of-the-box performance for tabular datasets.
 
 ### Key Steps:
-- **Preprocessing**: Imputation using KNN and PCA for dimensionality reduction
 - **Model**: `CatBoostClassifier` (ordinal classification treated as multiclass)
-- **Evaluation Metric**: Spearman correlation
-- **Cross-Validation**: Stratified k-fold to reduce overfitting
-
-## 📁 Project Structure
-
-```bash
-├── notebooks/              # Jupyter notebooks for EDA and modeling
-├── data/                   # Processed input features and example submissions
-├── models/                 # Model outputs and experiment logs
-├── submissions/            # Submission CSVs for Kaggle
-├── utils/                  # Helper scripts (imputation, PCA, model training)
-└── README.md               # This file
+- **Evaluation Metric**: F1 Score
